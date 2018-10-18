@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>母婴之家-[登录]</title>
+		<link rel="stylesheet" type="text/css" href="css/commonality.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	</head>
+	<body>
+		<div id="header">
+			<ul>
+				<li>欢迎来到母婴之家!</li>
+				<li class="color"><a href="javascript:;">[登录]</a></li>
+				<li class="color"><a href="javascript:;">[免费注册]</a><span>|</span></li>
+				<li class="father_menu">
+					<a href="javascript:;">我的订单</a>
+					&#xe8dc;
+					<span>|</span>
+					<ul class="menu">
+						<li><a href="javascript:;">我的家</a></li>
+						<li><a href="javascript:;">我的提问</a></li>
+						<li><a href="javascript:;">我的评论</a></li>
+						<li><a href="javascript:;">我的收藏</a></li>
+						<li><a href="javascript:;">我的幸运星</a></li>
+					</ul>
+				</li>
+				<li class="father_menu">
+					<a href="javascript:;">客户服务</a>
+					&#xe8dc;
+					<span>|</span>
+					<ul class="menu">
+						<li><a href="javascript:;">我的家</a></li>
+						<li><a href="javascript:;">我的提问</a></li>
+						<li><a href="javascript:;">我的评论</a></li>
+					</ul>
+				</li>
+				<li><a href="javascript:;">商务合作</a><span>|</span></li>
+				<li class="father_menu">
+					<a href="javascript:;">网站导航</a>
+					&#xe8dc;
+					<ul class="menu">
+						<li><a href="javascript:;">分类导航</a></li>
+						<li><a href="javascript:;">品牌导航</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div id="logon_logo">
+			<a href="javascript:;">
+				<img src="img/logo.jpg" >
+			</a>
+		</div>
+		<div id="form_box_wrap">
+			<div id="form_box">
+				<form action="php/login.php" method="post">
+					<div>
+						<span>账户名：</span><input type="text" name="phone" id="phone" value="请填入电话号码" />
+					</div>
+					<div>
+						<span>密码：</span><input type="password" name="password" id="password" value="请填入密码" />
+					</div>
+					<div id="radio_box">
+						<input type="radio" name="" id="radio" value="" />记住我(30天内免登录)忘记密码？
+					</div>
+					<input id="sbt" type="submit" value="立即登录"/>
+					<div>
+						<p>使用合作网站账号登录母婴之家：</p>
+						<p id="qq_logo">
+							<img src="img/weibo_logo.jpg" >
+							<img src="img/zhifubao_logo.jpg" >
+							<img src="img/qq_logo.jpg" >
+						</p>
+					</div>
+				</form>
+				<div id="app">
+					<a href="javascript:;"><img src="img/150211-340x300-2.jpg" ></a>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<p><a href="javascript:;">首页</a> | <a href="javascript:;">公司简介</a> | <a href="javascript:;">人才招聘</a> | <a href="javascript:;">合作联系</a> | <a href="javascript:;">企业理念</a> | <a href="javascript:;">隐私条款</a></p>
+			<p>由本网站发布的商品或服务的商业宣传活动均属"广告"</p>
+			<p>Copyright©2003 - 2017 上海母婴之家网络科技股份有限公司 muyingzhijia.com All Rights Reserved 客服热线：021-51760000 4008201000</p>
+			<p>出版物经营许可证新出发(沪)零字第E6980号</p>
+			<p>
+				<a href="javascript:;"><img src="img/shanghai_industry.jpg" ></a>
+				<a href="javascript:;"><img src="img/brand_bottom_large.jpg" ></a>
+			</p>
+			<p><a href="javascript:;">沪ICP备09021709号</a><a href="javascript:;"><img src="img/ghs.png" ></a><a href="javascript:;"></a>沪公网安备 31010402000751号</p>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	var obtn = document.getElementById("sbt");
+	obtn.onclick = function(){
+		var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+		xhr.open('POST','php/login.php');
+		xhr.setRequestHeader("content-type","application/x-www-form-urlencoded;charset=utf-8");
+		xhr.send(data);
+		xhr.onreadystatechange = function(){
+			if(xhr.readyState === 4 && xhr.status === 200){
+				if(typeof fn === 'function'){
+					fn(xhr.responseText);
+				}
+			}
+		}
+	}
+</script>

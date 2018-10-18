@@ -1,0 +1,147 @@
+#header{
+	height: 39px;
+	border-bottom: 1px solid #d7d6d7;
+	font-family:"iconfont" !important;
+	background-color: #eeecef;
+}
+#header ul{
+	float: right;
+	margin-right: 130px;
+	font-size: 12px;
+}
+#header ul li{
+	border: 1px solid transparent;
+	float: left;
+	line-height: 39px;
+	padding: 0 8px;
+	color: #666666;
+	position: relative;
+}
+#header ul li span{
+	margin-left: 8px;
+	color: #ccc;
+}
+#header .color a{
+	color: #ff5c00;
+}
+#header .menu{
+	position: absolute;
+	top: 39px;
+	left: -1px;
+	display: none;
+}
+#header .menu li{
+	height: 16px;
+	width: 100px;
+	line-height: 16px;
+}
+#header .father_menu:hover .menu{
+	display: block;
+	background-color: #fff;
+	border: 1px solid #f70;
+	border-top: 0;
+}
+#header .father_menu:hover{
+	background-color: #fff;
+	border: 1px solid #f70;
+}
+#logon_logo{
+	width: 100%;
+	height: 106px;
+	position: relative;
+}
+#logon_logo a{
+	display: block;
+	position: absolute;
+	left: 150px;
+	top: 25px;
+}
+/* 表单 */
+#form_box_wrap{
+	width: 100%;
+	padding: 40px 0;
+	background-color: #ececec;
+}
+#form_box{
+	width: 1000px;
+	margin: 0 auto;
+	background-color: #fff;
+	overflow: hidden;
+	position: relative;
+}
+#form_box form{
+	padding-top: 30px;
+	margin-left: 500px;
+}
+#form_box form div{
+	width: 100%;
+	margin: 15px 0;
+	float: left;
+}
+#form_box form div a{
+	display: block;
+	width: 110px;
+	height: 30px;
+	border: 1px solid #ffda71;
+	line-height: 30px;
+	text-align: center;
+	float: left;
+	margin-left: 30px;
+	background-color: #ffefbe;
+	color: #ff7800;
+	border-radius: 3px;
+}
+#form_box form span{
+	display: block;
+	width: 154px;
+	height: 33px;
+	line-height: 33px;
+	text-align: right;
+	float: left;
+	font-size: 12px;
+	color: #666;
+}
+#form_box form input{
+	width: 273px;
+	height: 33px;
+	border: 1px solid #c1c1c1;
+	margin-left: 5px;
+	float: left;
+	padding-left: 5px;
+	color: #757575;
+}
+#form_box form #sbt{
+	width: 227px;
+	height: 38px;
+	border-radius: 3px;
+	background-color: #ff5a00;
+	margin-left: 160px;
+	color: #fff;
+}
+#form_box form #radio_box{
+	margin-left: 156px;
+	color: #666;
+	font-size: 12px;
+}
+#form_box form #radio{
+	width: 12px;
+	height: 12px;
+	border-radius: 2px;
+}
+#form_box form p{
+	margin-left: 156px;
+	font-size: 12px;
+	padding: 5px 0;
+}
+#form_box form #qq_logo img{
+	display: block;
+	float: left;
+}
+#form_box  #app{
+	position: absolute;
+	left: 100px;
+	top: 0;
+}
+#footer{
+	background-color: #fff;
+}
